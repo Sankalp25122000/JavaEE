@@ -19,7 +19,7 @@
 	pageContext.setAttribute("studentList", students);
 	%>
 	
-	<table>
+	<table border = "1">
 	<tr>
 	<th>Name</th>
 	<th>Roll Number</th>
@@ -31,11 +31,11 @@
 	<td>${student.name}</td>
 	<td>${student.rollNo}</td>
 	<td>${student.email}</td>
-	<c:if test="${scholarship == true }">
-	<td${ }></td>
+	<c:if test="${student.scholarship == true }">
+	<td>yes</td>
 	</c:if>
-	<c:if test="${scholarship == false}">
-	<td></td>
+	<c:if test="${student.scholarship == false}">
+	<td>No</td>
 	</c:if>
 	
 	</tr>
